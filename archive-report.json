@@ -1,0 +1,126 @@
+{
+  "source": "https://www.tboutdoor.jp/",
+  "pages": [
+    {
+      "url": "https://www.tboutdoor.jp/",
+      "file": "index.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=20220330",
+      "file": "page-m-20220330.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=20220707",
+      "file": "page-m-20220707.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=20231114",
+      "file": "page-m-20231114.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=20250408",
+      "file": "page-m-20250408.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=20260402",
+      "file": "page-m-20260402.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?p=345",
+      "file": "page-p-345.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?p=488",
+      "file": "page-p-488.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?p=519",
+      "file": "page-p-519.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?p=541",
+      "file": "page-p-541.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?p=645",
+      "file": "page-p-645.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?page_id=353",
+      "file": "page-page_id-353.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?page_id=36",
+      "file": "page-page_id-36.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?page_id=38",
+      "file": "page-page_id-38.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?page_id=442",
+      "file": "page-page_id-442.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?page_id=46",
+      "file": "page-page_id-46.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?page_id=556",
+      "file": "page-page_id-556.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?author=1",
+      "file": "page-author-1.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?cat=10",
+      "file": "page-cat-10.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=202203",
+      "file": "page-m-202203.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=202207",
+      "file": "page-m-202207.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=202311",
+      "file": "page-m-202311.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=202504",
+      "file": "page-m-202504.html"
+    },
+    {
+      "url": "https://www.tboutdoor.jp/?m=202604",
+      "file": "page-m-202604.html"
+    }
+  ],
+  "files": 294,
+  "failed": {
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/animate.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/canvas.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/carousel.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/draw.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/layer.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/libs/tpgsap.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/media.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/modifiers.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/module.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/navigation.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/slide.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/wp-content/plugins/revslider/public/js/srtools.js": "curl: (56) The requested URL returned error: 404\n",
+    "https://www.tboutdoor.jp/style.css": "curl: (56) The requested URL returned error: 404\n"
+  },
+  "notes": [
+    "追加確認したSlider Revolutionの個別スクリプトは404ですが、主要処理はsr7.jsとtptools.jsに同梱されています。",
+    "元サイトでも404のstyle.css参照3件を除去しました。",
+    "HTML内の画像・スクリプト・CSS・内部リンクとCSS内の素材パスの存在確認済み。ブラウザでの目視比較は未実施。"
+  ],
+  "validation": {
+    "missing_local_references": 0,
+    "remote_html_image_script_stylesheet_dependencies": 0
+  }
+}
