@@ -248,7 +248,7 @@ var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Shar
 
 		</div>
 	</div>
-<div class="runbell-function-block" style="width:100%;margin:24px 0 0;"><a href="assets/products/runbell-function01.png" target="_blank" rel="noopener" aria-label="説明画像を拡大して開く" style="display:block;cursor:zoom-in;"><img src="assets/products/runbell-function01.png" alt="RUNBELL 各部の機能説明" width="1000" height="500" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;" /></a></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="runbell-function-block" style="width:100%;margin:24px 0 0;"><a href="assets/products/runbell-function01.png" class="runbell-image-popup" aria-label="説明画像を拡大して開く" style="display:block;cursor:zoom-in;"><img src="assets/products/runbell-function01.png" alt="RUNBELL 各部の機能説明" width="1000" height="500" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;" /></a></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element " >
 		<div class="wpb_wrapper">
 			<h2><img loading="lazy" decoding="async" class="alignnone" src="assets/products/runbell-product-logo.png" alt="RUNBELL" width="500" height="80" style="max-width:100%;height:auto;" /></h2>
@@ -264,7 +264,7 @@ var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Shar
 PAT.</p>
 
 		</div>
-	</div><div class="vc_btn3-container vc_btn3-left vc_custom_1699859970299" ><a class="runbell-amazon-banner" href="https://www.amazon.co.jp/dp/B0HJ7SB7QB" target="_blank" rel="noopener" style="display:inline-block;width:200px;max-width:100%;"><img src="assets/products/runbell-amazon-banner.png" alt="Amazonで購入" width="620" height="108" style="display:block;width:100%;height:auto;" /></a></div><div class="runbell-function-block" style="width:100%;margin:24px 0 0;"><a href="assets/products/runbell-function02.png" target="_blank" rel="noopener" aria-label="説明画像を拡大して開く" style="display:block;cursor:zoom-in;"><img src="assets/products/runbell-function02.png" alt="RUNBELL 使用時と消音モードの切り替え" width="1000" height="500" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;" /></a></div>
+	</div><div class="vc_btn3-container vc_btn3-left vc_custom_1699859970299" ><a class="runbell-amazon-banner" href="https://www.amazon.co.jp/dp/B0HJ7SB7QB" target="_blank" rel="noopener" style="display:inline-block;width:200px;max-width:100%;"><img src="assets/products/runbell-amazon-banner.png" alt="Amazonで購入" width="620" height="108" style="display:block;width:100%;height:auto;" /></a></div><div class="runbell-function-block" style="width:100%;margin:24px 0 0;"><a href="assets/products/runbell-function02.png" class="runbell-image-popup" aria-label="説明画像を拡大して開く" style="display:block;cursor:zoom-in;"><img src="assets/products/runbell-function02.png" alt="RUNBELL 使用時と消音モードの切り替え" width="1000" height="500" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;" /></a></div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-0e1ca397463a81b0ef53163a038b36a8.enable-bg-rollover .rollover i,
 .shortcode-single-image-wrap.shortcode-single-image-0e1ca397463a81b0ef53163a038b36a8.enable-bg-rollover .rollover-video i {
   background: -webkit-linear-gradient();
@@ -528,5 +528,33 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 		</div>
 	</div>
 </div>
+
+<style>
+#runbell-image-dialog {border:0;padding:48px 16px 16px;max-width:94vw;max-height:92vh;background:#fff;box-shadow:0 12px 48px #0006;}
+#runbell-image-dialog::backdrop {background:rgba(0,0,0,.7);}
+#runbell-image-dialog img {display:block;max-width:86vw;max-height:78vh;width:auto;height:auto;margin:auto;}
+#runbell-image-dialog button {position:absolute;top:4px;right:8px;background:white;color:#222;border:0;font-size:30px;line-height:36px;cursor:pointer;padding:0 8px;}
+</style>
+<dialog id="runbell-image-dialog" aria-label="機能説明の拡大画像"><button type="button" aria-label="閉じる">×</button><img alt=""></dialog>
+<script>
+(function () {
+ const dialog = document.getElementById('runbell-image-dialog');
+ const image = dialog.querySelector('img');
+ document.addEventListener('click', function (event) {
+   const link = event.target.closest('.runbell-image-popup');
+   if (!link) return;
+   event.preventDefault();
+   event.stopImmediatePropagation();
+   image.src = link.href;
+   image.alt = link.querySelector('img').alt;
+   dialog.showModal();
+ }, true);
+ dialog.querySelector('button').addEventListener('click', function () { dialog.close(); });
+ dialog.addEventListener('click', function (event) {
+  const rect = dialog.getBoundingClientRect();
+  if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+ });
+})();
+</script>
 </body>
 </html>
